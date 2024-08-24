@@ -4,12 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Masud Rana">
+    <meta name="description" content="We are exploring HTML5">
+    <meta name="keywords" content="HTML, portfolio, Masud Rana">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/f91fd0dd4a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="edication.html">My Education</a></li>
+                <li><a href="experience.html">My Experience</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
@@ -44,9 +65,79 @@
             </p>
             &hearts;
         </section>
+        <section>
+            <h2>Form:</h2>
+            <form action="https://formspree.io/f/xdknyarb" method="POST">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <!-- <input type="color">
+                    <input type="date" name="" id="">
+                    <input type="datetime" name="" id="">
+                    <input type="datetime-local" name="" id="">
+                    <input type="file" name="" id="">
+                    <input type="number" name="year" id="year" value="2003" min="2000" max="2010" step="2">
+                    <input type="month" name="" id="">
+                    <input type="range" name="" id="">
+                    <input type="search" name="" id="">
+                    <input type="time" name="" id="">
+                    <input type="week" name="" id="">
+                    <input type="url" name="" id=""> -->
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </p>
+                    <p>
+                        <label for="message">Your Message:</label> <br>
+                        <textarea name="message" id="message" cols="50" rows="10"
+                            placeholder="Write your message here:"></textarea>
+                    </p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>Multimedia:</h2>
+            <!-- <video width="400" height="auto" controls>
+                <source src="assets/videos/161045-822582085_small.mp4" type="video/mp4">
+                Video not available
+            </video> -->
+            <p>
+                <video src="assets/videos/161045-822582085_small.mp4" width="400" height="auto" controls></video>
+            </p>
+            <p>
+                <audio src="assets/audios/modern-indian-220656.mp3" controls></audio>
+            </p>
+        </section>
+        <section>
+            <h2>Map:</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.603483190385!2d89.23752070370335!3d25.760244275039913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e331912ef6621f%3A0x9750146c5ebf51b6!2sBangladesh%20Bank%20Mor!5e0!3m2!1sen!2sbd!4v1724522336641!5m2!1sen!2sbd"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer>
-
+        <h2>Follow me on:</h2>
+        <nav aria-label="secondary-navigation">
+            <ul>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Facebook" target="_blank" title="Facebook history"><i
+                            class="fa-brands fa-facebook"></i>Facebook History</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i>YouTube</a>
+                </li>
+            </ul>
+        </nav>
     </footer>
 </body>
 
